@@ -1,0 +1,77 @@
+[{
+        "event": "inbound",
+        "msg": {
+            "attachments": {
+                "equal.jpg": {
+                    "content": "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",
+                    "name": "equal.jpg",
+                    "type": "image/jpeg"
+                }
+            },
+            "cc": [
+                ["bob@example.com", "Bob Johnson"]
+            ],
+            "dkim": {
+                "signed": false,
+                "valid": false
+            },
+            "email": "testing+123testing@example.com",
+            "from_email": "john@example.com",
+            "from_name": "John Smith",
+            "headers": {
+                "Cc": "Bob Johnson <bob@example.com>",
+                "Content-Type": "multipart/mixed; boundary=\"51643cec_66ef438d_d22c\"",
+                "Date": "Tue, 9 Apr 2013 12:08:12 -0400",
+                "From": "John Smith <john@example.com>",
+                "Message-Id": "<54C9A31C34DF40409355EC9BB763EF15@example.com>",
+                "Mime-Version": "1.0",
+                "Received": ["from mail-gh0-f179.google.com (mail-gh0-f179.google.com [209.85.160.179]) by ip-10-254-10-35 (Postfix) with ESMTPS id 255244B40C5 for <testing+123testing@example.com>; Tue, 9 Apr 2013 16:08:20 +0000 (UTC)", "by mail-gh0-f179.google.com with SMTP id z12so1085045ghb.10 for <testing+123testing@example.com>; Tue, 09 Apr 2013 09:08:19 -0700 (PDT)", "from [10.0.0.83] (65-23-202-215.prtc.net. [65.23.202.215]) by mx.google.com with ESMTPS id s45sm43951018yhk.22.2013.04.09.09.08.15 (version=TLSv1 cipher=RC4-SHA bits=128/128); Tue, 09 Apr 2013 09:08:17 -0700 (PDT)"],
+                "Subject": "Testing",
+                "To": "Testing Staging <testing+123testing@example.com>",
+                "X-Gm-Message-State": "",
+                "X-Google-Dkim-Signature": "",
+                "X-Mailer": "sparrow 1.6.4 (build 1178)",
+                "X-Received": "by 10.236.209.67 with SMTP id r43mr16105835yho.197.1365523699219; Tue, 09 Apr 2013 09:08:19 -0700 (PDT)"
+            },
+            "html": "<p>We no speak americano</p>",
+            "raw_msg": "",
+            "sender": null,
+            "spam_report": {
+                "matched_rules": [{
+                        "description": "RBL: Sender listed at http://www.dnswl.org/, low",
+                        "name": "RCVD_IN_DNSWL_LOW",
+                        "score": -0.7
+                    }, {
+                        "description": null,
+                        "name": null,
+                        "score": 0
+                    }, {
+                        "description": "in list.dnswl.org]",
+                        "name": "listed",
+                        "score": 0
+                    }, {
+                        "description": "Local part of To: address appears in Subject",
+                        "name": "LOCALPART_IN_SUBJECT",
+                        "score": 0.7
+                    }, {
+                        "description": "BODY: HTML included in message",
+                        "name": "HTML_MESSAGE",
+                        "score": 0
+                    }
+                ],
+                "score": 0
+            },
+            "spf": {
+                "detail": "sender SPF authorized",
+                "result": "pass"
+            },
+            "subject": "Testing",
+            "tags": [],
+            "text": "\nThis is awesome!\n\n",
+            "to": [
+                ["testing+123testing@example.com", "Testing Staging"]
+            ]
+        },
+        "ts": 1365523701
+    }
+]
