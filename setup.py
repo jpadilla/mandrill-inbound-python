@@ -3,7 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
-readme = os.path.join(os.path.dirname(__file__), 'README.md')
+readme = os.path.join(os.path.dirname(__file__), 'README')
 long_description = open(readme).read()
 
 setup(
