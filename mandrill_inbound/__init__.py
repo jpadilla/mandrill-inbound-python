@@ -74,7 +74,7 @@ class MandrillInbound(object):
         return self.msg.get('text')
 
     def mailbox_hash(self):
-        matches = re.search(r"\+(\w+)\@", self.msg.get('email'))
+        matches = re.search(r"\+(\S+)\@", self.msg.get('email'))
 
         if matches:
             return matches.group(1)
