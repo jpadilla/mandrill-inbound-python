@@ -55,54 +55,54 @@ in Python inspired by this other Python wrapper library I made for <a href="http
 
 <h2>Usage</h2>
 
-<pre><code>from mandrill_inbound import MandrillInbound
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">mandrill_inbound</span> <span class="kn">import</span> <span class="n">MandrillInbound</span>
 
 
-# Load from JSON string
-json_data = open('./tests/fixtures/valid_http_post.json').read()
-inbound = MandrillInbound(json=json_data)
+<span class="c"># Load from JSON string</span>
+<span class="n">json_data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'valid_http_post.json'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">inbound</span> <span class="o">=</span> <span class="n">MandrillInbound</span><span class="p">(</span><span class="n">json</span><span class="o">=</span><span class="n">json_data</span><span class="p">)</span>
 
-# Load Python dictionary
-json_data = json.loads(open('./tests/fixtures/valid_http_post.json').read())
-inbound = MandrillInbound(source=json_data)
+<span class="c"># Load Python dictionary</span>
+<span class="n">json_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">'valid_http_post.json'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="n">inbound</span> <span class="o">=</span> <span class="n">MandrillInbound</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="n">json_data</span><span class="p">)</span>
 
-# Content
-inbound.subject()
-inbound.sender()
-inbound.to()
-inbound.cc()
-inbound.message_id()
-inbound.mailbox_hash()
-inbound.html_body()
-inbound.text_body()
-inbound.send_date()
-inbound.ts()
+<span class="c"># Content</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">subject</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">to</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">cc</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">message_id</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">mailbox_hash</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">html_body</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">text_body</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">send_date</span><span class="p">()</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">ts</span><span class="p">()</span>
 
-# headers
-inbound.headers()  # default to get all headers
-inbound.headers('MIME-Version')
-inbound.headers('Received-SPF')
+<span class="c"># headers</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">headers</span><span class="p">()</span>  <span class="c"># default to get all headers</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s">'MIME-Version'</span><span class="p">)</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">headers</span><span class="p">(</span><span class="s">'Received-SPF'</span><span class="p">)</span>
 
-# attachments
-inbound.has_attachments() # boolean
-attachments = inbound.attachments()
+<span class="c"># attachments</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">has_attachments</span><span class="p">()</span> <span class="c"># boolean</span>
+<span class="n">attachments</span> <span class="o">=</span> <span class="n">inbound</span><span class="o">.</span><span class="n">attachments</span><span class="p">()</span>
 
-first_attachment = attachments[0]
-first_attachment.name()
+<span class="n">first_attachment</span> <span class="o">=</span> <span class="n">attachments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">first_attachment</span><span class="o">.</span><span class="n">name</span><span class="p">()</span>
 
-second_attachment = attachments[1]
-second_attachment.content_length()
+<span class="n">second_attachment</span> <span class="o">=</span> <span class="n">attachments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">second_attachment</span><span class="o">.</span><span class="n">content_length</span><span class="p">()</span>
 
-for a in attachments:
-  a.name()
-    a.content_type()
-    a.read()
-    a.download('./tests/', ['image/png'])
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">attachments</span><span class="p">:</span>
+  <span class="n">a</span><span class="o">.</span><span class="n">name</span><span class="p">()</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">content_type</span><span class="p">()</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s">'./tests/'</span><span class="p">,</span> <span class="p">[</span><span class="s">'image/png'</span><span class="p">])</span>
 
-# raw data
-inbound.source
-inbound.msg
-</code></pre>
+<span class="c"># raw data</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">source</span>
+<span class="n">inbound</span><span class="o">.</span><span class="n">msg</span>
+</pre></div>
 
 <h2>Bug tracker</h2>
 
