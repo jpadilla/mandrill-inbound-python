@@ -40,10 +40,15 @@ class MandrillInbound(object):
         return (self.msg.get('from_name'), self.msg.get('from_email'))
 
     def cc(self):
-        return self._normalize_addresses(self.msg.get('cc'))
+        if 'cc' in self.msg:
+            return self._normalize_addresses(self.msg.get('cc'))
+        return []
 
     def to(self):
         return self._normalize_addresses(self.msg.get('to'))
+
+    def recipients(self):
+        return self.to() + self.cc()
 
     def headers(self, header=None):
         headers = self.msg.get('headers')

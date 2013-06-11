@@ -1,0 +1,99 @@
+[
+   {
+      "event":"inbound",
+      "ts":1370883297,
+      "msg":{
+         "raw_msg":"Received: from mail-wi0-f175.google.com (mail-wi0-f175.google.com [209.85.212.175])\n\tby ip-10-254-10-35 (Postfix) with ESMTPS id CB91B4B41AF\n\tfor <mandrill@mysite.com>; Mon, 10 Jun 2013 16:54:56 +0000 (UTC)\nReceived: by mail-wi0-f175.google.com with SMTP id m6so1600396wiv.2\n        for <mandrill@mysite.com>; Mon, 10 Jun 2013 09:54:54 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed\/relaxed;\n        d=gmail.com; s=20120113;\n        h=mime-version:in-reply-to:references:date:message-id:subject:from:to\n         :cc:content-type;\n        bh=qWswsKND7fEGQG7T\/XJz0Tazrvt5W4TAYnb9bqwMxa4=;\n        b=Qk+d+Mg5VaUdzCfncueAtiQDTgkFEQVEBJ5ytAwgDUEaxC7aX9D4BM4CwCX4u4PZXO\n         vcOapYAa13Hi3GwH07+0mwwpjNXO8uekt1OXcyfXa8ELjh+EkGxomZF4h2W8Km8vXGi1\n         F+hVco1\/wz6OXt9axLk+bR58ds2cGXpSZYKqcNQhBonDKnkBxe\/17TYDVUWES\/AG3k+q\n         tXaH867OBuV2ildddWDycnBVMhHsgWwV8P4fHnnPi5eBtUTi2yfxUNQpsmUbt2kgi4lf\n         drw\/mgVoDyu1n43ChI96KIwyfx+4B1RKpOC\/OoLoR0I02V5wu7vvgpgsCZR3twmudXsB\n         4p2w==\nMIME-Version: 1.0\nX-Received: by 10.180.23.101 with SMTP id l5mr2650972wif.30.1370883294908;\n Mon, 10 Jun 2013 09:54:54 -0700 (PDT)\nReceived: by 10.194.18.71 with HTTP; Mon, 10 Jun 2013 09:54:54 -0700 (PDT)\nIn-Reply-To: <CAMFm_RXypR9mF8N8HQjVUSKv9SGc=ADCtLoDUcKEQNMBxziAFQ@mail.gmail.com>\nReferences: <CAMTyg4YDtab07r5mUkk8u6-9y3eGRyD4-ZmZgDC4DkFsYHjSww@mail.gmail.com>\n\t<CAMTyg4bfr7p1SsqFnoASRrH4n9y9vW7dJHpp-y_=8-1FX_qepQ@mail.gmail.com>\n\t<CAMFm_RXypR9mF8N8HQjVUSKv9SGc=ADCtLoDUcKEQNMBxziAFQ@mail.gmail.com>\nDate: Mon, 10 Jun 2013 17:54:54 +0100\nMessage-ID: <CAMFm_RXS_-1zfOf4gFazra9N2d86KOeYbe_b=cpuj9XK-3vsqw@mail.gmail.com>\nSubject: nerd forum on test\nFrom: Andrew Boot <user@mail.com>\nTo: Marco Iannone <rcv@mail.com>\nCc: mandrill@mysite.com\nContent-Type: multipart\/alternative; boundary=001a1130c2ead25bf504decfa3eb\n\n--001a1130c2ead25bf504decfa3eb\nContent-Type: text\/plain; charset=ISO-8859-1\n\nand another\n\n\nOn 10 June 2013 17:52, Andrew Boot <user@mail.com> wrote:\n\n> and another REAL reply\n>\n>\n> On 10 June 2013 17:50, Marco Iannone <rcv@mail.com> wrote:\n>\n>> This is pretty cool. You could reply and see what happens :)\n>>\n>\n>\n>\n> --\n> andy,\n> www.nuclearcarrot.com\n>\n\n\n\n-- \nandy,\nwww.nuclearcarrot.com\n\n--001a1130c2ead25bf504decfa3eb\nContent-Type: text\/html; charset=ISO-8859-1\nContent-Transfer-Encoding: quoted-printable\n\n<div dir=3D\"ltr\">and another<\/div><div class=3D\"gmail_extra\"><br><br><div c=\nlass=3D\"gmail_quote\">On 10 June 2013 17:52, Andrew Boot <span dir=3D\"ltr\">&=\nlt;<a href=3D\"mailto:user@mail.com\" target=3D\"_blank\">user@mail.com=\nom<\/a>&gt;<\/span> wrote:<br>\n<blockquote class=3D\"gmail_quote\" style=3D\"margin:0 0 0 .8ex;border-left:1p=\nx #ccc solid;padding-left:1ex\"><div dir=3D\"ltr\">and another REAL reply<\/div=\n><div class=3D\"gmail_extra\"><br><br><div class=3D\"gmail_quote\"><div class=\n=3D\"im\">On 10 June 2013 17:50, Marco Iannone <span dir=3D\"ltr\">&lt;<a href=\n=3D\"mailto:rcv@mail.com\" target=3D\"_blank\">rcv@mail.com=\nom<\/a>&gt;<\/span> wrote:<br>\n\n<\/div><div class=3D\"im\"><blockquote class=3D\"gmail_quote\" style=3D\"margin:0=\n 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\"><p dir=3D\"ltr\">This =\nis pretty cool. You could reply and see what happens :)<\/p>\n<\/blockquote><\/div><\/div><span class=3D\"HOEnZb\"><font color=3D\"#888888\"><br=\n><br clear=3D\"all\"><div><br><\/div>-- <br>andy,<br><a href=3D\"http:\/\/www.nuc=\nlearcarrot.com\" target=3D\"_blank\">www.nuclearcarrot.com<\/a><br>\n<\/font><\/span><\/div>\n<\/blockquote><\/div><br><br clear=3D\"all\"><div><br><\/div>-- <br>andy,<br><a =\nhref=3D\"http:\/\/www.nuclearcarrot.com\" target=3D\"_blank\">www.nuclearcarrot.c=\nom<\/a><br>\n<\/div>\n\n--001a1130c2ead25bf504decfa3eb--",
+         "headers":{
+            "Received":[
+               "from mail-wi0-f175.google.com (mail-wi0-f175.google.com [209.85.212.175]) by ip-10-254-10-35 (Postfix) with ESMTPS id CB91B4B41AF for <mandrill@mysite.com>; Mon, 10 Jun 2013 16:54:56 +0000 (UTC)",
+               "by mail-wi0-f175.google.com with SMTP id m6so1600396wiv.2 for <mandrill@mysite.com>; Mon, 10 Jun 2013 09:54:54 -0700 (PDT)",
+               "by 10.194.18.71 with HTTP; Mon, 10 Jun 2013 09:54:54 -0700 (PDT)"
+            ],
+            "Dkim-Signature":"v=1; a=rsa-sha256; c=relaxed\/relaxed; d=gmail.com; s=20120113; h=mime-version:in-reply-to:references:date:message-id:subject:from:to :cc:content-type; bh=qWswsKND7fEGQG7T\/XJz0Tazrvt5W4TAYnb9bqwMxa4=; b=Qk+d+Mg5VaUdzCfncueAtiQDTgkFEQVEBJ5ytAwgDUEaxC7aX9D4BM4CwCX4u4PZXO vcOapYAa13Hi3GwH07+0mwwpjNXO8uekt1OXcyfXa8ELjh+EkGxomZF4h2W8Km8vXGi1 F+hVco1\/wz6OXt9axLk+bR58ds2cGXpSZYKqcNQhBonDKnkBxe\/17TYDVUWES\/AG3k+q tXaH867OBuV2ildddWDycnBVMhHsgWwV8P4fHnnPi5eBtUTi2yfxUNQpsmUbt2kgi4lf drw\/mgVoDyu1n43ChI96KIwyfx+4B1RKpOC\/OoLoR0I02V5wu7vvgpgsCZR3twmudXsB 4p2w==",
+            "Mime-Version":"1.0",
+            "X-Received":"by 10.180.23.101 with SMTP id l5mr2650972wif.30.1370883294908; Mon, 10 Jun 2013 09:54:54 -0700 (PDT)",
+            "In-Reply-To":"<CAMFm_RXypR9mF8N8HQjVUSKv9SGc=ADCtLoDUcKEQNMBxziAFQ@mail.gmail.com>",
+            "References":"<CAMTyg4YDtab07r5mUkk8u6-9y3eGRyD4-ZmZgDC4DkFsYHjSww@mail.gmail.com> <CAMTyg4bfr7p1SsqFnoASRrH4n9y9vW7dJHpp-y_=8-1FX_qepQ@mail.gmail.com> <CAMFm_RXypR9mF8N8HQjVUSKv9SGc=ADCtLoDUcKEQNMBxziAFQ@mail.gmail.com>",
+            "Date":"Mon, 10 Jun 2013 17:54:54 +0100",
+            "Message-Id":"<CAMFm_RXS_-1zfOf4gFazra9N2d86KOeYbe_b=cpuj9XK-3vsqw@mail.gmail.com>",
+            "Subject":"nerd forum on test",
+            "From":"Andrew Boot <user@mail.com>",
+            "To":"mandrill@mysite.com",
+            "Cc":"",
+            "Content-Type":"multipart\/alternative; boundary=001a1130c2ead25bf504decfa3eb"
+         },
+         "text":"and another\n\n\nOn 10 June 2013 17:52, Andrew Boot <user@mail.com> wrote:\n\n> and another REAL reply\n>\n>\n> On 10 June 2013 17:50, Marco Iannone <rcv@mail.com> wrote:\n>\n>> This is pretty cool. You could reply and see what happens :)\n>>\n>\n>\n>\n> --\n> andy,\n> www.nuclearcarrot.com\n>\n\n\n\n-- \nandy,\nwww.nuclearcarrot.com\n\n",
+         "text_flowed":false,
+         "html":"<div dir=\"ltr\">and another<\/div><div class=\"gmail_extra\"><br><br><div class=\"gmail_quote\">On 10 June 2013 17:52, Andrew Boot <span dir=\"ltr\">&lt;<a href=\"mailto:user@mail.com\" target=\"_blank\">user@mail.com<\/a>&gt;<\/span> wrote:<br>\n<blockquote class=\"gmail_quote\" style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\"><div dir=\"ltr\">and another REAL reply<\/div><div class=\"gmail_extra\"><br><br><div class=\"gmail_quote\"><div class=\"im\">On 10 June 2013 17:50, Marco Iannone <span dir=\"ltr\">&lt;<a href=\"mailto:rcv@mail.com\" target=\"_blank\">rcv@mail.com<\/a>&gt;<\/span> wrote:<br>\n\n<\/div><div class=\"im\"><blockquote class=\"gmail_quote\" style=\"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex\"><p dir=\"ltr\">This is pretty cool. You could reply and see what happens :)<\/p>\n<\/blockquote><\/div><\/div><span class=\"HOEnZb\"><font color=\"#888888\"><br><br clear=\"all\"><div><br><\/div>-- <br>andy,<br><a href=\"http:\/\/www.nuclearcarrot.com\" target=\"_blank\">www.nuclearcarrot.com<\/a><br>\n<\/font><\/span><\/div>\n<\/blockquote><\/div><br><br clear=\"all\"><div><br><\/div>-- <br>andy,<br><a href=\"http:\/\/www.nuclearcarrot.com\" target=\"_blank\">www.nuclearcarrot.com<\/a><br>\n<\/div>\n\n",
+         "from_email":"user@mail.com",
+         "from_name":"Andrew Boot",
+         "to":[
+            [
+               "mandrill@mysite.com",
+               "mandrill_user"
+            ]
+         ],
+         "subject":"nerd forum on test",
+         "spam_report":{
+            "score":-0.8,
+            "matched_rules":[
+               {
+                  "name":"FREEMAIL_FROM",
+                  "score":0,
+                  "description":"Sender email is commonly abused enduser mail provider"
+               },
+               {
+                  "name":null,
+                  "score":0,
+                  "description":null
+               },
+               {
+                  "name":"HTML_MESSAGE",
+                  "score":0,
+                  "description":"BODY: HTML included in message"
+               },
+               {
+                  "name":"DKIM_VALID_AU",
+                  "score":-0.1,
+                  "description":"Message has a valid DKIM or DK signature from author's"
+               },
+               {
+                  "name":"DKIM_SIGNED",
+                  "score":0.1,
+                  "description":"Message has a DKIM or DK signature, not necessarily valid"
+               },
+               {
+                  "name":"DKIM_VALID",
+                  "score":-0.1,
+                  "description":"Message has at least one valid DKIM or DK signature"
+               },
+               {
+                  "name":"RCVD_IN_DNSWL_LOW",
+                  "score":-0.7,
+                  "description":"RBL: Sender listed at http:\/\/www.dnswl.org\/, low"
+               },
+               {
+                  "name":"listed",
+                  "score":0,
+                  "description":"in list.dnswl.org]"
+               }
+            ]
+         },
+         "dkim":{
+            "signed":true,
+            "valid":true
+         },
+         "spf":{
+            "result":"pass",
+            "detail":"sender SPF authorized"
+         },
+         "email":"mandrill@mysite.com",
+         "tags":[
+
+         ],
+         "sender":null,
+         "template":null
+      }
+   }
+]
