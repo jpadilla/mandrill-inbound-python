@@ -77,5 +77,25 @@ class MandrillInboundTest(unittest.TestCase):
     def test_ts(self):
         assert 2013 == self.inbound.ts().year
 
+    def test_recipients(self):
+        recip = self.inbound.recipients()
+
+        assert 'Testing Staging' == recip[0][0]
+        assert 'testing+123testing@example.com' == recip[0][1]
+        assert 'Bob Johnson' == recip[1][0]
+        assert 'bob@example.com' == recip[1][1]
+
+
+class MandrillInboundNoCcTest(unittest.TestCase):
+
+    def setUp(self):
+        json_data = open('tests/fixtures/valid_http_post_no_cc.json').read()
+        self.inbound = MandrillInbound(json=json_data)
+
+    def test_can_handle_no_cc(self):
+        cc = self.inbound.cc()
+        assert [] == cc
+
+
 if __name__ == "__main__":
     unittest.main()
