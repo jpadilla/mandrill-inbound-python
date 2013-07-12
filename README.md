@@ -53,6 +53,11 @@ inbound.text_body
 inbound.send_date
 inbound.ts
 
+# Spam and Spoofing Detection
+inbound.spf
+inbound.dkim
+inbound.spam_score
+
 # headers
 inbound.headers  # default to get all headers
 inbound.headers['MIME-Version']
