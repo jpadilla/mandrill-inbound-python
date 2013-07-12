@@ -84,6 +84,15 @@ class MandrillInboundTest(unittest.TestCase):
         assert 'testing+123testing@example.com' == recip[0][1]
         assert 'Bob Johnson' == recip[1][0]
         assert 'bob@example.com' == recip[1][1]
+        
+    def test_spf(self):
+        assert "pass" == self.inbound.spf
+        
+    def test_dkim(self):
+        assert False == self.inbound.dkim
+        
+    def test_spam_score(self):
+        assert 0 == self.inbound.spam_score
 
 
 class MandrillInboundNoCcTest(unittest.TestCase):
@@ -95,6 +104,17 @@ class MandrillInboundNoCcTest(unittest.TestCase):
     def test_can_handle_no_cc(self):
         cc = self.inbound.cc
         assert [] == cc
+        
+    def test_spf(self):
+        assert "pass" == self.inbound.spf
+        
+    def test_dkim(self):
+        assert True == self.inbound.dkim
+        
+    def test_spam_score(self):
+        assert -0.8 == self.inbound.spam_score
+    
+    
 
 
 if __name__ == "__main__":
