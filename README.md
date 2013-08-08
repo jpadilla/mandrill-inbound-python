@@ -1,4 +1,4 @@
-# Mandrill Inbound Python Wrapper
+# Mandrill Inbound Python Wrapper [![Build Status](https://travis-ci.org/jpadilla/mandrill-inbound-python.png?branch=master)](https://travis-ci.org/jpadilla/mandrill-inbound-python)
 
 
 This is a simple API wrapper for [Mandrill's inbound email webhook](http://help.mandrill.com/entries/22092308-What-is-the-format-of-inbound-email-webhooks-)
