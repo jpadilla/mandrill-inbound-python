@@ -52,16 +52,14 @@ class MandrillInbound(object):
         """
         All names and emails the email was indirectly sent to (cc'd)
         """
-        if 'cc' in self.msg:
-            return self._normalize_addresses(self.msg.get('cc'))
-        return []
-
+        return self._normalize_addresses(self.msg.get('cc', []))
+        
     @property
     def to(self):
         """
         All names and emails the email was directly sent to (to)
         """
-        return self._normalize_addresses(self.msg.get('to'))
+        return self._normalize_addresses(self.msg.get('to', []))
 
     @property
     def recipients(self):
