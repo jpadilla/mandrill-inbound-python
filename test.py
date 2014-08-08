@@ -8,7 +8,10 @@ class MandrillInboundTest(unittest.TestCase):
 
     def setUp(self):
         json_data = open('tests/fixtures/valid_http_post.json').read()
+        json_data_no_attachments = open('tests/fixtures/valid_http_post_no_attachments.json').read()
+
         self.inbound = MandrillInbound(json=json_data)
+        self.inbound_no_attachments = MandrillInbound(json=json_data_no_attachments)
 
     def tearDown(self):
         if os.path.exists('./tests/equal.jpg'):
@@ -67,6 +70,9 @@ class MandrillInboundTest(unittest.TestCase):
             a.download('./tests/')
 
         assert True == os.path.exists('./tests/equal.jpg')
+
+    def test_have_no_attachments(self):
+        assert 0 == len(self.inbound_no_attachments.attachments)
 
     def test_send_date(self):
         assert 2013 == self.inbound.send_date.year

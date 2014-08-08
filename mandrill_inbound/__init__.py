@@ -86,7 +86,7 @@ class MandrillInbound(object):
         All attachments for this email.
         """
         attachments = []
-        for name, attachment in self.msg.get('attachments').items():
+        for name, attachment in self.msg.get('attachments', {}).items():
             attachments.append(Attachment(attachment))
         return attachments
 
