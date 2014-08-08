@@ -16,7 +16,7 @@ except (IOError, ImportError):
 
 setup(
     name='python-mandrill-inbound',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_packages(),
     author='José Padilla',
     author_email='jpadilla@webapplicate.com',
