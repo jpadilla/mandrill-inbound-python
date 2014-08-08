@@ -41,47 +41,47 @@ json_data = json.loads(open('./tests/fixtures/valid_http_post.json').read())
 inbound = MandrillInbound(source=json_data)
 
 # Content
-inbound.subject
-inbound.sender
-inbound.to
-inbound.cc
-inbound.recipients
-inbound.message_id
-inbound.mailbox_hash
-inbound.html_body
-inbound.text_body
-inbound.send_date
-inbound.ts
+print inbound.subject
+print inbound.sender
+print inbound.to
+print inbound.cc
+print inbound.recipients
+print inbound.message_id
+print inbound.mailbox_hash
+print inbound.html_body
+print inbound.text_body
+print inbound.send_date
+print inbound.ts
 
 # Spam and Spoofing Detection
-inbound.spf
-inbound.dkim
-inbound.spam_score
+print inbound.spf
+print inbound.dkim
+print inbound.spam_score
 
 # headers
-inbound.headers  # default to get all headers
-inbound.headers['MIME-Version']
-inbound.headers['Received-SPF']
+print inbound.headers  # default to get all headers
+print inbound.headers['MIME-Version']
+print inbound.headers['Received-SPF']
 
 # attachments
-inbound.has_attachments # boolean
+print inbound.has_attachments # boolean
 attachments = inbound.attachments
 
 first_attachment = attachments[0]
-first_attachment.name
+print first_attachment.name
 
 second_attachment = attachments[1]
-second_attachment.content_length
+print second_attachment.content_length
 
 for a in attachments:
-  a.name
-	a.content_type
-	a.read()
-	a.download('./tests/', ['image/png'])
+	print a.name
+	print a.content_type
+	print a.read()
+	print a.download('./tests/', ['image/png'])
 
 # raw data
-inbound.source
-inbound.msg
+print inbound.source
+print inbound.msg
 ```
 
 Bug tracker
