@@ -28,7 +28,7 @@ easy_install python-mandrill-inbound
 Usage
 -----
 
-```
+```python
 from mandrill_inbound import MandrillInbound
 
 
